@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #129799;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu1 ul, .menu2 ul {
+    color: #f7f7f7;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-style: normal;
+    font-size: 1.875rem;
+    line-height: 2.188rem;
+    cursor: pointer;
+}
+
+.menu1 ul {
+    margin-top: 1.5rem;
+    font-weight: 400;
+}
+
+.menu1 ul li:hover {
+    font-weight: 500;
+}
+
+.menu2 ul{
+    margin-bottom: 1.875rem;
+    font-weight: 500;
+}
+
+.chamada {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.chamada__img {
+    width: 40rem;
+    height: 20rem;
+}
+
+.chamada__txt {
+    color: #f7f7f7;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.688rem;
+}
+
+main {
+    display: flex;
+    background-color: #FFA185;
+    flex-direction: column;
+}
+
+.conteudo {
+    width: 85%;
+    margin-left: 3.125rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
+.conteudo__titulo {
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.conteudo__paragrafo {
+    font-size: 1.875rem;
+    line-height: 3.5rem;
+}
+
+.imagens {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.imagens img {
+    margin-bottom: 3.5rem;
+    width: 40rem;
+    height: 20rem;
+}
+
+.veja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.313rem;
+}
+.veja__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.188rem;
+    color: #000000;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #129799;
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 3.75rem;
+    margin-bottom: 4.063rem;
+}
+
+.contato img {
+    margin-right: 1.938rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.menu {
+    width: 50%;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 2.188rem;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+.menu ul li:hover {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 660px) {
+    .chamada__img {
+        width: 20rem;
+        height: 10rem;
+    }
+    .imagens img {
+        width: 20rem;
+        height: 10rem;
+    }
+    .menu ul, .menu1 ul, .menu2 ul, .conteudo__paragrafo {
+        font-size: 0.938rem;
+    }
+    .conteudo__titulo {
+        font-size: 1.5rem;
+    }
+    .chamada__txt {
+        font-size: 2rem;
+    }
+    .veja__link {
+        font-size: 0.938rem;
+    }
+}
